@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order page</title>
+    <style>
+      .first-line {
+        text-align: center;
+      }
+      #deleteButton {
+        color: red;
+      }
+      ul {
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="my-form">
+      <div class="container">
+        <h1 class="first-line">Please Give the order !..</h1>
+        <div class="main-container">
+
+          <label for="price">Selling Price:</label>
+          <input type="number" id="price" />
+
+          <label for="product">Product Name:</label>
+          <input type="text" id="product" />
+          <input type="submit" value="Add Product" />
+        </div>
+        <h1>Product</h1>
+        <ul id="user"></ul>
+        <h3 id="total">Total Value Worth of Product : Rs 0</h3>
+      </div>
+    </form>
+
+    <script src="orderWebsite.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+  </body>
+</html>
